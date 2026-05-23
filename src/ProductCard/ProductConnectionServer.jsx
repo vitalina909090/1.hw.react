@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import ProductCard from './ProductCard';
+import ProductCatalog from './ProductCatalog';
 
 const ProductConnectionServer = () => {
     const [products, setProducts] = useState([]);
@@ -11,30 +11,8 @@ const ProductConnectionServer = () => {
         .catch((err) => console.error('Ошибка загрузки товаров:', err));
     }, []);
 
-    const onAddToCart = (id) => {
-        alert(`Товар ${id} добавлен в корзину!`);
-    };
+    return <ProductCatalog products={products} />;
 
-    return (
-    <div className="products-catalog">
-        {products.map((product) => (
-            <ProductCard
-                key={product.id}
-                id={product.id}
-                title={product.title}
-                price={product.price}
-                oldPrice={product.oldPrice}
-                currency={product.currency}
-                image={product.image}
-                rating={product.rating}
-                inStock={product.inStock}
-                discount={product.discount}
-                badges={product.badges}
-                onAddToCart={onAddToCart}
-            />
-        ))}
-    </div>
-  );
 };
 
 export default ProductConnectionServer;

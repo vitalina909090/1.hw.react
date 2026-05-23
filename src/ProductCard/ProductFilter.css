@@ -1,0 +1,178 @@
+.product-filter {
+    width: 220px;
+    flex-shrink: 0;
+    background: #fdf6f0;
+    border-radius: 20px;
+    border: 1px solid #f0e4d7;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    position: sticky;
+    top: 24px;
+}
+
+
+.filter-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.filter-title {
+    font-size: 15px;
+    font-weight: 700;
+    color: #4a3728;
+    margin: 0;
+}
+
+.filter-reset-btn {
+    background: none;
+    border: none;
+    font-size: 12px;
+    color: #c0522a;
+    cursor: pointer;
+    padding: 0;
+    font-weight: 600;
+}
+
+.filter-reset-btn:hover {
+    color: #c98360;
+}
+
+
+.filter-section {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.filter-section-label {
+    font-size: 12px;
+    font-weight: 700;
+    color: #b0a098;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    margin: 0;
+}
+
+
+
+.filter-sort-group {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.filter-sort-btn {
+    background: none;
+    border: 1px solid #f0e4d7;
+    border-radius: 10px;
+    padding: 7px 12px;
+    font-size: 13px;
+    color: #7a6558;
+    cursor: pointer;
+    text-align: left;
+}
+
+.filter-sort-btn:hover {
+    background: #f7ede3;
+    border-color: #e8c9a8;
+}
+
+.filter-sort-btn.active {
+    background: #e8c9a8;
+    border-color: #ddb98a;
+    color: #4a3728;
+    font-weight: 600;
+}
+
+
+
+.filter-checkbox-label {
+    display: flex;
+    align-items: center;
+    gap: 9px;
+    cursor: pointer;
+}
+
+.filter-checkbox {
+    width: 16px;
+    height: 16px;
+    cursor: pointer;
+}
+
+.filter-checkbox-text {
+    font-size: 13px;
+    color: #4a3728;
+}
+
+
+
+.filter-price-row {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.filter-price-input {
+    width: 0;
+    flex: 1;
+    background: #fff8f3;
+    border: 1px solid #f0e4d7;
+    border-radius: 10px;
+    padding: 7px 10px;
+    font-size: 13px;
+    color: #4a3728;
+    outline: none;
+}
+
+.filter-price-input::placeholder {
+    color: #c8b8ae;
+}
+
+.filter-price-input:focus {
+    border-color: #ddb98a;
+}
+
+.filter-price-input::-webkit-outer-spin-button,
+.filter-price-input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+
+.filter-price-dash {
+    font-size: 13px;
+    color: #b0a098;
+}
+
+
+
+.filter-stars {
+    display: flex;
+    align-items: center;
+    gap: 2px;
+}
+
+.filter-star-btn {
+    background: none;
+    border: none;
+    font-size: 20px;
+    color: #e0d0c4;
+    cursor: pointer;
+    padding: 0 1px;
+    line-height: 1;
+}
+
+.filter-star-btn:hover {
+    transform: scale(1.15);
+}
+
+.filter-star-btn.active {
+    color: #e8a050;
+}
+
+.filter-star-hint {
+    font-size: 12px;
+    color: #b0a098;
+    margin-left: 4px;
+}

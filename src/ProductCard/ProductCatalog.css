@@ -1,0 +1,22 @@
+.catalog-layout {
+    display: flex;
+    gap: 28px;
+    padding: 32px;
+    align-items: flex-start;
+}
+
+.catalog-main {
+    flex: 1;
+    min-width: 0;
+}
+
+.catalog-results-count {
+    font-size: 13px;
+    color: #b0a098;
+}
+
+.no-results {
+    color: #b0a098;
+    font-size: 15px;
+}
+
