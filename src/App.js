@@ -1,9 +1,9 @@
 // import './App.css';
-import ProductArray from "./ProductCard/ProductConnectionServer";
+import ProductConnectionServer from "./Shop/ProductConnectionServer";
 
 function App() {
   return (
-    <ProductArray />
+    <ProductConnectionServer />
   );
 }
 

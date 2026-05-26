@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
-import ProductCatalog from './ProductCatalog';
-
+import ProductCatalog from './ProductCatalog/ProductCatalog';
+ 
 const ProductConnectionServer = () => {
     const [products, setProducts] = useState([]);
 
